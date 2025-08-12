@@ -2,9 +2,22 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ยูสเซอร์หมุนเวียน</title>
   <style>
-    body { font-family:'Prompt', sans-serif; font-size:16px; margin:0; padding:10px; text-align:center; background:#fff; }
+    body {
+      font-family: 'Prompt', 'Segoe UI', sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+      background: #fff;
+      color: #2e7d32;
+    }
+    #user-display {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
   </style>
 </head>
 <body>
@@ -20,7 +33,7 @@
       document.getElementById("user-display").textContent = `ยูสเซอร์ล่าสุด: ${randomDigits()}`;
     }
     updateUser();
-    setInterval(updateUser, Math.floor(30000 + Math.random() * 30000));
+    setInterval(updateUser, Math.floor(20000 + Math.random() * 20000));
   </script>
 </body>
 </html>
