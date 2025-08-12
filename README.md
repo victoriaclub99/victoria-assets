@@ -24,13 +24,31 @@ victoria-assets/
 
 ```
 
-## Files Description
 
-- **index.html**: The main HTML document that serves as the entry point for the application. It links to the CSS and JavaScript files.
-  
-- **style.css**: Contains styles for the HTML elements defined in index.html, including layout, colors, fonts, and other visual aspects.
+---
 
-- **script.js**: Contains JavaScript code that adds interactivity to the HTML page, including functions and event listeners.
+## 🧩 Files Description
+
+- `index.html`: Main mock landing page with embedded modules and fallback logic
+- `style.css`: Styling for layout, fonts, colors, and responsive design
+- `script.js`: Frontend logic for dynamic updates and event triggers
+- `mock_online.json`: Simulated online user count
+- `mock_jackpot.json`: Simulated jackpot data
+- `mock_online.sh`: Shell script to auto-update mock JSON files
+- `user-rotate.html`: Standalone iframe module for rotating user display
+
+---
+
+## 🔄 Mock Backend Workflow
+
+### 1. Shell Script (`mock_online.sh`)
+- Generates `mock_online.json` and `mock_jackpot.json`
+- Updates numbers every 10 seconds
+- Simulates time-based behavior (e.g. higher traffic at night)
+
+```bash
+nohup bash mock_online.sh &
+
 
 ## Getting Started
 
@@ -43,5 +61,12 @@ victoria-assets/
 
 You can modify the HTML, CSS, and JavaScript files to customize the application as needed.
 
+
+🛠️ Notes
+.nojekyll ensures GitHub Pages serves all folders correctly
+
+All assets use fallback logic for reliability
+
+Designed for modular reuse across campaigns
 ##iframe <iframe src="https://victoriaclub99.github.io/victoria-assets/user-rotate.html"
         style="border:none; width:100%; height:50px;"></iframe>
