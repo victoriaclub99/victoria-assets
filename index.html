@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Project</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- theme-color สำหรับเบราว์เซอร์ที่รองรับ -->
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fallback: หากเบราว์เซอร์ไม่รองรับ theme-color จะใช้สีพื้นหลังเริ่มต้นของระบบ -->
+    <!-- เว็บไซต์นี้ปรับปรุงเพื่อรองรับการเข้าถึงสำหรับทุกกลุ่มผู้ใช้ -->
+</head>
+<body>
+  <section class="mock-ads" style="margin:20px 0; text-align:center;">
+    <div id="ad-banner" style="background:#fffbe7; border-radius:8px; box-shadow:0 2px 8px #ffd70033; padding:16px; margin-bottom:10px;">
+      <img id="ad-img" src="assets/ads/ad1.png" alt="โปรเด็ดวันนี้" style="max-width:100px; vertical-align:middle; margin-right:10px;">
+      <span id="ad-text" style="font-size:1.1em; font-weight:bold; color:#d32f2f;">สมัครวันนี้ รับโบนัส 100% ฟรี!</span>
+    </div>
+  </section>
+<section class="online-count" style="margin:20px 0; text-align:center;">
+  <p>กำลังออนไลน์ <span id="online-number">987,141</span> คน</p>
+  <p style="color:#d32f2f; font-weight:bold;">ระบบกำลังมีผู้ใช้งานจำนวนมาก กรุณาสมัครก่อนเต็มสิทธิ์</p>
+  <p style="color:#388e3c;">มีผู้สมัครใหม่แล้วกว่า 1,200 คนใน 24 ชั่วโมงที่ผ่านมา</p>
+</section>
+
+<section class="jackpot" style="margin:20px 0; text-align:center;">
+  <p>แจ็คพอตล่าสุด <span id="jackpot-amount">9,853,683</span> บาท</p>
+  <p>อัปเดตล่าสุดเมื่อ <span id="jackpot-time">10 ส.ค. 2568 10:56:49</span></p>
+</section>
+<div id="players"></div>
+    <h1>Welcome to the Mock Project</h1>
+    <div id="online-users" style="font-size:1.2em; margin:10px 0; color:#2e7d32; font-weight:bold;">
+      👥 ผู้ใช้งานออนไลน์ขณะนี้: <span id="online-count">987,141</span> คน
+    </div>
+    <p>ตัวอย่างการฝัง mock page ด้วย iframe:</p>
+  <iframe src="https://victoria789.club/login" width="100%" height="400" frameborder="0" allowfullscreen title="แสดงตัวอย่างหน้าเข้าสู่ระบบ victoria789.club" aria-label="แสดงตัวอย่างหน้าเข้าสู่ระบบ victoria789.club"></iframe>
+    <p>หรือใช้ปุ่ม trigger event ส่งข้อมูลไป next.mssg.me:</p>
+    <div style="margin-bottom:20px;">
+  <button onclick="sendEvent('signup')" aria-label="สมัครสมาชิก">สมัครสมาชิก (Trigger Event)</button>
+  <button onclick="sendEvent('line')" aria-label="แอดไลน์">แอดไลน์ (Trigger Event)</button>
+  <button onclick="sendEvent('promo')" aria-label="ดูโปรโมชัน">ดูโปรโมชัน (Trigger Event)</button>
+    </div>
+    <img src="assets/logo.png" alt="Logo" width="100">
+    <h2>📊 อัตราการชนะของเกม</h2>
+    <div id="games"></div>
+ 
+    <h2>🧍‍♂️ ผู้เล่นล่าสุด</h2>
+    <div id="players"></div>
+
+    <section class="review-section">
+      <h2>⭐ รีวิวผู้เล่น (Fake Review Module)</h2>
+      <div class="review-list">
+        <div class="review-item">
+          <img src="assets/photo/user1.png" alt="จะจ๋า" class="review-avatar">
+          <div>
+            <strong>จะจ๋า</strong> <span>★★★★★</span>
+            <p>ทุนไม่เยอะ ก็แตกหลักหมื่นได้</p>
+          </div>
+        </div>
+        <div class="review-item">
+          <img src="assets/photo/user2.png" alt="อ้ออาย" class="review-avatar">
+          <div>
+            <strong>อ้ออาย</strong> <span>★★★★★</span>
+            <p>เล่นขำๆ ตอนกลางคืน ตื่นมาดูเงินเข้าเฉย!</p>
+          </div>
+        </div>
+        <div class="review-item">
+          <img src="assets/photo/user3.png" alt="น้ำหวาน" class="review-avatar">
+          <div>
+            <strong>น้ำหวาน</strong> <span>★★★★★</span>
+            <p>ฟรีสปินรัวๆ ปั่นแป๊บเดียวบวกยับ!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <h2>💳 ฝากแล้วถอน</h2>
+    <div id="transactions"></div>
+    
+    <h2>🎯 โปรโมชั่น</h2>
+    <img src="assets/photo/pro.casi.png" alt="โปรคาสิโน" width="100%">
+    <img src="assets/photo/สมัคร1.png" alt="สมัคร" width="100%">
+
+    <section class="provider-section">
+      <h2>🎰 ค่ายเกมยอดนิยม</h2>
+      <div class="carousel">
+  <button class="carousel-btn" id="prevBtn" aria-label="เลื่อนภาพก่อนหน้า">&#8592;</button>
+        <div class="carousel-track">
+          <img src="assets/gif/provider1.gif" alt="Provider 1" class="carousel-img" loading="lazy" onerror="this.onerror=null; this.src='assets/gif/provider1-fallback.png';">
+          <img src="assets/gif/provider2.gif" alt="Provider 2" class="carousel-img" loading="lazy" onerror="this.onerror=null; this.src='assets/gif/provider2-fallback.png';">
+          <img src="assets/gif/provider3.gif" alt="Provider 3" class="carousel-img" loading="lazy" onerror="this.onerror=null; this.src='assets/gif/provider3-fallback.png';">
+        </div>
+  <button class="carousel-btn" id="nextBtn" aria-label="เลื่อนภาพถัดไป">&#8594;</button>
+      </div>
+    </section>
+    <h2>🖱️ ปุ่มทางเข้า</h2>
+    <div class="button-row">
+    </div>
+
+    <section class="button-section">
+      <h2>📌 ปุ่มใช้งานหลัก</h2>
+      <div class="button-group">
+  <a href="https://victoria789.club/register">
+          <img src="assets/buttons/signup.png" alt="สมัครสมาชิก" loading="lazy"
+               onerror="this.onerror=null; this.src='assets/buttons/signup-fallback.png';">
+        </a>
+        <a href="https://line.me/ti/p/yourlineid" target="_blank">
+          <img src="assets/buttons/line.png" alt="แอดไลน์" loading="lazy"
+               onerror="this.onerror=null; this.src='assets/buttons/line-fallback.png';">
+        </a>
+          <a href="https://lin.ee/xf5RyZW" target="_blank" aria-label="ติดต่อแอดมิน">
+            <img src="assets/buttons/contact-admin.png" alt="ติดต่อแอดมิน" loading="lazy"
+                 onerror="this.onerror=null; this.src='assets/buttons/contact-admin-fallback.png';">
+          </a>
+        <a href="/login">
+          <img src="assets/buttons/login.png" alt="เข้าสู่ระบบ" loading="lazy"
+               onerror="this.onerror=null; this.src='assets/buttons/login-fallback.png';">
+        </a>
+      </div>
+    </section>
+    </div>
+
+<section class="reviews">
+  <h2>รีวิวจากผู้เล่นจริง</h2>
+  <div class="review">
+    <p><strong>จะจ๋า</strong> ★★★★★<br>ทุนไม่เยอะ ก็แตกหลักหมื่นได้</p>
+    <p><strong>อ้ออาย</strong> ★★★★★<br>เล่นขำๆ ตอนกลางคืน ตื่นมาดูเงินเข้าเฉย!</p>
+    <p><strong>น้ำหวาน</strong> ★★★★★<br>ฟรีสปินรัวๆ ปั่นแป๊บเดียวบวกยับ!</p>
+  </div>
+</section>
+
+<section class="carousel">
+  <h2>🎁 โปรโมชั่นพิเศษ</h2>
+  <div class="slider">
+    <div class="slide">📱 แทงติด 10 ไม้ รับ iPhone 16 Pro Max</div>
+    <div class="slide">🏍️ แทงติด 10 ไม้ รับ Honda Forza</div>
+    <div class="slide">🏅 แทงติด 12 ไม้ รับทองคำ 5 บาท</div>
+  </div>
+</section>
+
+<script>
+  let index = 0;
+  const slides = document.querySelectorAll('.slide');
+  setInterval(() => {
+    slides.forEach((s, i) => s.style.display = i === index ? 'block' : 'none');
+    index = (index + 1) % slides.length;
+  }, 3000);
+</script>
+    <script src="script.js"></script>
+<script>
+  // Mock Ads Banner
+  const ads = [
+    { img: 'assets/ads/ad1.png', text: 'สมัครวันนี้ รับโบนัส 100% ฟรี!' },
+    { img: 'assets/ads/ad2.png', text: 'ฝากครั้งแรก รับ iPhone 16 Pro Max!' },
+    { img: 'assets/ads/ad3.png', text: 'แนะนำเพื่อน รับทองคำ 1 บาททันที!' },
+    { img: 'assets/ads/ad4.png', text: 'คืนยอดเสีย 10% ทุกสัปดาห์!' }
+  ];
+  let adIndex = 0;
+  function rotateAd() {
+    const ad = ads[adIndex];
+    document.getElementById('ad-img').src = ad.img;
+    document.getElementById('ad-img').alt = ad.text;
+    document.getElementById('ad-text').textContent = ad.text;
+    adIndex = (adIndex + 1) % ads.length;
+  }
+  setInterval(rotateAd, 8000);
+  rotateAd();
+</script>
+<script>
+  function fetchOnline() {
+    fetch('mock_online.json')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('online-number').textContent = data.online.toLocaleString();
+      });
+  }
+  setInterval(fetchOnline, 10000);
+  fetchOnline();
+
+  function fetchJackpot() {
+    fetch('mock_jackpot.json')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('jackpot-amount').textContent = data.jackpot.toLocaleString();
+        document.getElementById('jackpot-time').textContent = data.time;
+      });
+  }
+  setInterval(fetchJackpot, 10000);
+  fetchJackpot();
+</script>
+  <!-- ฝัง widget mssg.me -->
+  <script src="https://mssg.me/widget/68849324a215591072a105a7" async></script>
+  <noscript>
+    <div style="background:#ffd; color:#222; padding:1em; border-radius:8px; margin:1em 0; text-align:center;">
+      ระบบติดต่ออัตโนมัติไม่พร้อมใช้งาน กรุณาแอดไลน์ <a href="https://lin.ee/xf5RyZW" target="_blank">@victoria789club</a>
+    </div>
+  </noscript>
+</body>
+</html>
