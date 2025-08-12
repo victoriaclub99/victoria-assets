@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ยูสเซอร์หมุนเวียน</title>
+  <style>
+    body { font-family:'Prompt', sans-serif; font-size:16px; margin:0; padding:10px; text-align:center; background:#fff; }
+  </style>
+</head>
+<body>
+  <div id="user-display">ยูสเซอร์ล่าสุด: กำลังโหลด...</div>
+  <script>
+    const base = "0864";
+    function randomDigits() {
+      const mid = Math.floor(100 + Math.random() * 900);
+      const end = Math.floor(100 + Math.random() * 900);
+      return `${base}${mid}***${end}`;
+    }
+    function updateUser() {
+      document.getElementById("user-display").textContent = `ยูสเซอร์ล่าสุด: ${randomDigits()}`;
+    }
+    updateUser();
+    setInterval(updateUser, Math.floor(30000 + Math.random() * 30000));
+  </script>
+</body>
+</html>
