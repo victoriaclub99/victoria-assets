@@ -1,0 +1,10 @@
+{
+  "jackpot": 9853683,
+  "online": 987141,
+  "last_updated": "2025-08-12T10:56:49+07:00",
+  "players": [
+    {"id": "user_001", "game": "Knockout Riches", "deposit": 300, "withdraw": 5000},
+    {"id": "pilot_023", "game": "Dragon's Quest", "deposit": 150, "withdraw": 3500},
+    {"id": "agent_999", "game": "Treasure Rush", "deposit": 500, "withdraw": 7000}
+  ]
+}
